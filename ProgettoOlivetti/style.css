@@ -1,0 +1,47 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: bolder;
+}
+
+body {
+    background-image:url(https://www.inarch.it/wp-content/uploads/2018/07/ivrea-1-880x480.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100;
+    min-height: 100vh;
+}
+.titolo{
+    width: 100;
+    text-align: center;
+    font-size: 50px;
+}
+
+.section {
+    width: 100%;
+    text-align: center;
+}
+
+.section a{
+    font-size: 40px;
+    padding: 30px;
+    text-decoration-line: none;
+    font-weight: bolder;
+    color: white !important;
+}
+
+.storia{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 50px;
+    background-color: transparent;
+}
+
+.storia p{
+    font-size: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
