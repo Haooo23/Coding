@@ -15,13 +15,6 @@ body {
     min-height: 100vh;
 }
 
-.mainImg{
-    margin-top: 2%;
-    margin-left: 20%;
-    margin-right: 20%;
-    min-height: 100vh;
-}
-
 .pnlTop{
     background-color:rgb(33, 10, 136);
 }
@@ -146,4 +139,56 @@ body {
     width: 1200px;
     height: 700px;
 }
+
+.adriano_olivetti{
+    float: left;
+    padding-left: 20px;
+}
+
+.arduinobg{
+    background-image: url("img/arduino.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainbg{
+    background-image: url("img/ivrea.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.arduino p{
+    font-size: 18px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 30px;
+    animation: fade-in 5s ease-in-out;
+    background-color: rgb(14, 41, 196);
+}
+
+.arduino h2{
+    background-color: rgb(14, 41, 196);
+    animation: fade-in 5s ease-in-out;
+}
+
+.arduino{
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 30px;
+    background-color: transparent;
+}
+
+.map h2{
+    margin-top: 10%;
+    text-align: left;
+}
+
+.map{
+    margin-bottom: 30%;
+    margin-left: 30%;
+}
+
 
