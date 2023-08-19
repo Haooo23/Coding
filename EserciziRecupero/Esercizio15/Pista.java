@@ -10,11 +10,9 @@ public class Pista {
                 wait();
             }
             counter++;
-        } catch (Exception e) {
-
-        }
+        } catch (Exception e) {}    
     }
-    
+
     public synchronized void esciPista(){
         counter--;
         notifyAll();
