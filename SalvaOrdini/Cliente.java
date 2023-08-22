@@ -6,4 +6,8 @@ public class Cliente {
     public Cliente(String cognome) {
         this.cognome = cognome;    
     }
+
+    public String toString() {
+        return cognome;
+    }
 }

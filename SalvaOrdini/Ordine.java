@@ -12,9 +12,15 @@ public class Ordine {
     public Cliente getCliente() {
         return cliente;
     }
+    
 
     public String getPanino() {
         return panino;
+    }
+    
+    @Override
+    public String toString() {
+        return cliente + " " + panino;
     }
 
 }
