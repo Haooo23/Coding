@@ -5,9 +5,11 @@ public class SecchioBuffer {
 
 	private int counterLatteSecchio = 0;
 	private CisternaBuffer cisternaBuffer;
+	private int id;
 
-	public SecchioBuffer(CisternaBuffer cisternaBuffer){
+	public SecchioBuffer(CisternaBuffer cisternaBuffer, int id){
 		this.cisternaBuffer = cisternaBuffer;
+		this.id = id;
 	}
 
 	public synchronized void addLatte(){
@@ -19,7 +21,7 @@ public class SecchioBuffer {
 			}
 		}
 		counterLatteSecchio++;
-		System.out.println("[SECCHIO] Latte aggiunto al secchio | Latte contenuto: " + counterLatteSecchio + "/" + MAX_LATTE);
+		System.out.println("[SECCHIO][" + id  + "}Latte aggiunto al secchio | Latte contenuto: " + counterLatteSecchio + "/" + MAX_LATTE);
 		notifyAll();
 
 		if (counterLatteSecchio >= MAX_LATTE) {
