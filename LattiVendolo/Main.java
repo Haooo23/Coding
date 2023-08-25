@@ -1,22 +1,19 @@
 package LattiVendolo;
 
 public class Main {
-    public static void main(String[] args) {
-        CisternaBuffer cisternaBuffer = new CisternaBuffer();
-        SecchioBuffer secchioBuffer = new SecchioBuffer(cisternaBuffer);
-        ProduttoreMucca produttoreMucca1 = new ProduttoreMucca(secchioBuffer);
-        ProduttoreMucca produttoreMucca2 = new ProduttoreMucca(secchioBuffer);
-        ProduttoreMucca produttoreMucca3 = new ProduttoreMucca(secchioBuffer);
-        ProduttoreMucca produttoreMucca4 = new ProduttoreMucca(secchioBuffer);
-        ConsumatoreCamion consumatoreCamion = new ConsumatoreCamion(cisternaBuffer);
-        ConsumatoreCamion consumatoreCamion1 = new ConsumatoreCamion(cisternaBuffer);
+	private static final int NUMERO_MUCCHE = 4;
+	private static final int NUMERO_CAMION = 1;
 
-        produttoreMucca1.start();
-        produttoreMucca2.start();
-        produttoreMucca3.start();
-        produttoreMucca4.start();
-        consumatoreCamion.start();
-        consumatoreCamion1.start();
+	public static void main(String[] args) {
+		CisternaBuffer cisternaBuffer = new CisternaBuffer();
+		SecchioBuffer secchioBuffer = new SecchioBuffer(cisternaBuffer);
 
-    }
+		for (int i = 0; i < NUMERO_MUCCHE; i++) {
+			new ProduttoreMucca(secchioBuffer).start();;
+		}
+
+		for (int i = 0; i < NUMERO_CAMION; i++) {
+			new ConsumatoreCamion(cisternaBuffer).start();;
+		}
+	}
 }
